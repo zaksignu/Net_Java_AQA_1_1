@@ -8,8 +8,8 @@ public class CashbackHackServiceTest {
     static CashbackHackService cb = new CashbackHackService();
 
     @Test
-    public void shouldWorkWell() {
-        int actual = 1000;
+    public void shouldNotWorkWell() {
+        int actual = 0;
         int expected = cb.remain(1000);
         assertEquals(actual, expected);
     }
